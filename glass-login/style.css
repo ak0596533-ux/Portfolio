@@ -10,7 +10,7 @@ body {
 
     background:
         linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)),
-        url("profile.jpeg") center/cover fixed no-repeat;
+        url("background.jpg") center/cover fixed no-repeat;
 
     margin: 0;
     padding: 0;
