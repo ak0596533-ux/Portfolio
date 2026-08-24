@@ -1557,3 +1557,23 @@ footer a {
   }
 
 }
+.project-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.project-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.project-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.85;
+}
