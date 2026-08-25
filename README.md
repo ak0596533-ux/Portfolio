@@ -1,23 +1,23 @@
 # Ankit Kumar | Portfolio
 
-A modern, responsive personal portfolio website built to showcase my skills, projects, and web development journey.
+A modern, responsive personal portfolio website built with HTML, CSS and JavaScript.
 
 ## 👨‍💻 About Me
 
-Hi, I'm Ankit Kumar, a final-year BCA student and frontend developer passionate about creating modern, responsive, and user-friendly websites.
+Hi, I'm Ankit Kumar, a final-year BCA student and frontend developer passionate about creating modern, responsive and user-friendly websites.
 
-I'm currently working with HTML, CSS, JavaScript, and Python, and I use Visual Studio Code for development.
+I enjoy learning new technologies and building real-world web projects to improve my development skills.
 
 ## 🚀 Features
 
 - Responsive design for desktop and mobile
-- Modern user interface
+- Modern portfolio interface
 - Glassmorphism login page
 - Create Account page
 - Forgot Password page
 - Resume download
 - Projects showcase
-- GitHub and LinkedIn links
+- GitHub and LinkedIn integration
 - Contact form
 - Admin response viewer
 - Dark/Light theme
@@ -34,27 +34,26 @@ I'm currently working with HTML, CSS, JavaScript, and Python, and I use Visual S
 
 ## 📂 Projects
 
-### 1. Responsive Portfolio
+### Responsive Portfolio
 
-A modern personal portfolio website designed to showcase my profile, skills, projects, and contact information.
+A modern personal portfolio website showcasing my profile, skills, projects and contact information.
 
-### 2. Glassmorphism Login Page
+### Glassmorphism Login Page
 
-A modern glassmorphism login interface featuring password visibility toggle, form validation, Create Account, and Forgot Password functionality.
+A modern glassmorphism login interface featuring password visibility toggle, form validation, Create Account and Forgot Password functionality.
 
 ## 🌐 Live Website
 
-**Portfolio:**  
-https://ak0596533-ux.github.io/Portfolio/
+[Visit My Portfolio](https://ak0596533-ux.github.io/Portfolio/)
 
 ## 🔗 Connect With Me
 
-- GitHub: https://github.com/ak0596533-ux
-- LinkedIn: https://www.linkedin.com/in/ankit-kumar-90a5982a2/
+- [GitHub](https://github.com/ak0596533-ux)
+- [LinkedIn](https://www.linkedin.com/in/ankit-kumar-90a5982a2/)
 
 ## 📄 Resume
 
-My resume is available for download directly from my portfolio website.
+My resume can be downloaded directly from my portfolio website.
 
 ---
 
