@@ -34,7 +34,7 @@ loginForm.addEventListener("submit", (event) => {
     loginForm.reset();
 
     setTimeout(() => {
-        window.location.href = "../index.html";
+        window.location.href = "../portfolio.html";
     }, 1000);
 
     togglePassword.textContent = "👁";
