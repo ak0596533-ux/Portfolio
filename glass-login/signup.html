@@ -3,32 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+
+    <title>Create Account</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .signup-container {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 110px 20px 40px;
+        }
+
+        .signup-box {
+            width: 400px;
+            padding: 40px 35px;
+            border-radius: 25px;
+
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+
+            box-shadow:
+                0 25px 50px rgba(0, 0, 0, 0.35),
+                inset 0 0 20px rgba(255, 255, 255, 0.05);
+
+            color: white;
+
+            animation: boxAnimation 0.8s ease;
+        }
+
+        .signup-box h1 {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .signup-subtitle {
+            text-align: center;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.75);
+            margin-bottom: 30px;
+        }
+
+        .signup-input {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .signup-input input {
+            width: 100%;
+            height: 55px;
+            padding: 0 18px;
+
+            background: rgba(255, 255, 255, 0.1);
+
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 12px;
+
+            outline: none;
+
+            color: white;
+            font-size: 14px;
+
+            transition: 0.3s;
+        }
+
+        .signup-input input:focus {
+            border-color: white;
+            background: rgba(255, 255, 255, 0.16);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.12);
+        }
+
+        .signup-input label {
+            position: absolute;
+            left: 18px;
+            top: 17px;
+
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+
+            pointer-events: none;
+            transition: 0.3s;
+        }
+
+        .signup-input input:focus + label,
+        .signup-input input:not(:placeholder-shown) + label {
+            top: -9px;
+            left: 14px;
+
+            padding: 0 6px;
+
+            background: rgba(40, 40, 40, 0.7);
+            border-radius: 5px;
+
+            font-size: 11px;
+            color: white;
+        }
+
+        .create-btn {
+            width: 100%;
+            height: 52px;
+
+            border: none;
+            border-radius: 12px;
+
+            background: white;
+            color: #222;
+
+            font-family: "Poppins", sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .create-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .create-btn:active {
+            transform: scale(0.97);
+        }
+
+        .back-login {
+            text-align: center;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.75);
+            margin-top: 22px;
+        }
+
+        .back-login a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .back-login a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 480px) {
+            .signup-box {
+                width: 100%;
+                padding: 32px 25px;
+                border-radius: 20px;
+            }
+
+            .signup-box h1 {
+                font-size: 27px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <div class="login-container">
-        <h2>Create Account</h2>
+<nav class="navbar">
+    <div class="logo">ANKIT<span>.</span></div>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact Us</a>
+    </div>
+</nav>
+
+<div class="signup-container">
+
+    <div class="signup-box">
+
+        <h1>Create Account</h1>
+        <p class="signup-subtitle">Sign up to get started</p>
 
         <form>
-            <input type="text" placeholder="Full Name" required>
 
-            <input type="email" placeholder="Email Address" required>
+            <div class="signup-input">
+                <input type="text" id="name" placeholder=" " required>
+                <label>Full Name</label>
+            </div>
 
-            <input type="password" placeholder="Create Password" required>
+            <div class="signup-input">
+                <input type="email" id="email" placeholder=" " required>
+                <label>Email Address</label>
+            </div>
 
-            <input type="password" placeholder="Confirm Password" required>
+            <div class="signup-input">
+                <input type="password" id="password" placeholder=" " required>
+                <label>Password</label>
+            </div>
 
-            <button type="submit">Sign Up</button>
+            <div class="signup-input">
+                <input type="password" id="confirmPassword" placeholder=" " required>
+                <label>Confirm Password</label>
+            </div>
+
+            <button type="submit" class="create-btn">
+                Create Account
+            </button>
+
+            <p class="back-login">
+                Already have an account?
+                <a href="index.html">Login</a>
+            </p>
+
         </form>
 
-        <p>
-            Already have an account?
-            <a href="index.html">Login</a>
-        </p>
     </div>
+
+</div>
 
 </body>
 </html>
